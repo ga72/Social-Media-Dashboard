@@ -1,0 +1,85 @@
+p{
+    color: hsl(228, 12%, 44%);
+}
+.item{
+   background-color: hsl(227, 47%, 96%);
+   border-top: solid hsl(208, 92%, 53%);
+   border-radius: 5px;
+}
+.item2{
+   background-color: hsl(227, 47%, 96%);
+   border-top: solid hsl(329, 70%, 58%);
+   border-radius: 5px;
+}
+.item3{
+   background-color: hsl(227, 47%, 96%);
+   border-top: solid hsl(355, 87%, 38%);
+   border-radius: 5px;
+}
+
+h6{
+    color:hsl(228, 8%, 53%) ;
+}
+
+.arrow p{
+    color:hsl(163, 72%, 41%);
+}
+
+.item:hover , .item2:hover , .item3:hover , .items:hover{
+
+    background-color: rgb(205, 201, 201);
+    cursor: pointer;
+}
+
+.items{
+   background-color: hsl(227, 47%, 96%);
+   border-radius: 5px;
+}
+
+/* .darkMode{
+    margin-left: 100px;
+} */
+
+input{
+    appearance: none;
+    width: 40px;
+    height: 16px;
+    background-color: rgb(203, 201, 201);
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+input::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    transform: translate(15% , -50% );
+    transition: 0.3s;
+  
+}
+input:checked{
+    background-color: rgb(176, 176, 234);
+}
+
+input:checked::after{
+    transform: translate(170%, -50%);
+}
+
+body.dark_mode {
+    background-color: hsl(230, 17%, 14%);
+    color: #fff;
+}
+.dark_mode .item ,.dark_mode .item2 , .dark_mode .item3 , .dark_mode .items {
+    background-color: hsl(228, 28%, 20%);
+
+}
+.dark_mode .item:hover , .dark_mode .item2:hover , .dark_mode .item3:hover , .dark_mode .items:hover{
+    background-color: rgb(204, 203, 203);
+}
